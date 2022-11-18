@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+
+.background{
+    background-image: url(./imag/foto1.jpg);
+    width: 100%;
+   
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 2000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 2px 14%;
+}
+
+.logo{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cabeçalho-link{
+    display: flex;
+    gap: 3rem;
+}
+
+.cabeçalho-link a{
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover{
+    color: #ad75ad;
+}
+
+.icon span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon span:hover{
+    color: #c8815f;
+}
+
+.container-3{
+    
+    background: url(../imag/logo3.jpg);
+    background-size: cover;
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    gap: 0rem;
+    padding-top: 15rem;
+}
+
+
+.container-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.container-card-2 img{
+    width: 250px;
+    height: auto;
+}
+
+.container-card-2{
+    background-color: #D8BFD8;
+    color: #000;
+}
+
+
+#Contato{
+    display: flex;
+    justify-content: space-around;
+    background-color: #111;
+    padding: 2rem;
+    margin-top: 5rem;
+    display: black;
+	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.meio-contato li{
+    margin-bottom: 15px;
+}
+
+.meio-contato li a{
+    display: block;
+    color: #fff;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text{
+    text-align: center;
+    background-color: #D3D3D3;
+    color: black;
+}
