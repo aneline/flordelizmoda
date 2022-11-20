@@ -30,7 +30,7 @@ header {
   position: fixed;
   background: transparent;
   transition: all 0.35s ease;
-  background-color: #fff;
+  background-color: #ffe2ee;
   padding: 14px 14%;
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .cabeçalho-link a:hover {
-  color: #c8815f;
+  color: #787bab;
 }
 
 .icon span {
@@ -60,49 +60,34 @@ header {
 }
 
 .icon span:hover {
-  color: #c8815f;
+  color: #787bab;
 }
 
 .container {
-  padding: 20rem 0 0 35rem;
-  line-height: 15rem;
+  padding: 20rem 0 0 41rem;
+  line-height: 25rem;
 }
 
-.container-1 {
-  font-size: 0 rem;
-  padding: 0rem 35rem;
-  line-height: 1rem;
-  color: #111;
-}
-
-.container h1 {
-  font-size: 4rem;
-}
 
 .container button {
-  background-color: #c8815f;
+  background-color: #ffe2ee;
   padding: 1rem 3rem 1rem 3rem;
   border: none;
   border-radius: 5px;
-  color: #fff;
+  color: #111;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .container button:hover {
-  background-color: #111;
+  background-color: #787bab;
   transform: scaleY(1.2);
 }
 
 section {
-  padding: 30rem 0 0 30rem;
-}
-
-section h1 {
-  align-items: center;
+  padding: 2rem;
   text-align: center;
-  font-size: 2rem;
 }
 
 .Container-card-1 {
@@ -110,7 +95,7 @@ section h1 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .cards img {
@@ -137,63 +122,16 @@ section h1 {
 
 .container-2 {
   font-size: 1rem;
-  padding: 3rem 0 0 35rem;
-  line-height: 1rem;
-  color: #111;
-}
-.Container-roupas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.container-4 {
-  font-size: 2rem;
-  padding: 5rem 0 0 35rem;
+  padding: 3rem 0 0 41rem;
   line-height: 1rem;
   color: #111;
 }
 
-.Container-roupas img:hover {
-  transform: scale(0.9) translateY(-5px);
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.roupa img {
-  width: 250px;
-  height: auto;
-}
 
-.roupa {
-  background-color: #c8815f;
-  color: #000;
-}
 
-.container-5 {
-  margin-top: 2rem;
-  font-size: 3rem;
-  padding: 1rem 0 0 38rem;
-  line-height: 1rem;
-  color: #111;
-}
 
-.container-6 {
-  margin-top: 1rem;
-  cursor: pointer;
-  align-items: center;
-  text-align: center;
-}
 
-.Acessórios img {
-  width: 180px;
-  height: auto;
-  background-color: aliceblue;
-}
 
 #Contato {
   display: flex;
