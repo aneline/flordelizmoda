@@ -4,8 +4,10 @@
 }
 
 a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   transition: 0.3s;
 }
 
@@ -24,7 +26,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
+  background: white;
   height: 8vh;
 }
 
@@ -67,7 +69,7 @@ main {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: lightslategrey;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -114,9 +116,9 @@ main {
 }
 
 .texto {
-  padding-left: 3vw;
-  padding-right: 3vw;
-  margin-top: 2%;
+  padding-left: 1vw;
+  padding-right: vw;
+  margin-top: 1%;
   margin-right: 50%;
   float: right;
   text-align: justify;
@@ -134,14 +136,14 @@ main {
 }
 
 .foto1 img {
-  width: 100%;
+  width: 120%;
 }
 
 footer {
   bottom: 0px;
   position: fixed absolute;
-  width: 85rem;
-  text-align: center;
+  width: 100%;
+  font-size: 1.vw;
   height: 0px;
   color: white;
   background: #111;
@@ -174,8 +176,9 @@ footer {
   content: '';
   width: 15%;
   height: 2px;
-  background: #f12020;
+  background: #787bab;;
   top: -10px;
+  left: 0px;
 }
 
 .box .content:before {
@@ -185,6 +188,7 @@ footer {
   width: 100%;
   background: #1a1a1a;
   top: -10px;
+  left: 0px;
 }
 
 .left .content .social {
@@ -207,7 +211,7 @@ footer {
 }
 
 .left .content .social a span:hover {
-  background: #f12020;
+  background: #787bab;
 }
 
 .left .content p {
@@ -227,7 +231,7 @@ footer {
 }
 
 .center .content .fas:hover {
-  background: #f12020;
+  background: #787bab;;
 }
 
 .center .content .text {
@@ -275,7 +279,7 @@ footer {
 .right form .btn button {
   height: 40px;
   width: 100%;
-  background: #f12020;
+  background: #787bab;;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
