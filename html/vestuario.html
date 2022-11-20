@@ -5,36 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/vestuario.css">
+        <link rel="stylesheet" href="../js/vestuario.js" />
+        <script src="https://kit.fontawesome.com/6ce3e4c994.js" crossorigin="anonymous"></script>
         <title>Flor de Liz Moda</title>
     </head>
     <body>
-        <div class="background">
-            <header>
-                <div class="logo">
-                    <h1>Flor de Liz</h1>
-                </div>
-                <div class="cabeçalho-link">
-                    <li>
-                        <a href="../index.html" target="iframe">Ínicio</a>
-                    </li>
-                    <li>
-                        <a href="acessorios.html" target="iframe">Acessórios</a>
-                    </li>
-                    <li>
-                        <a href="vestuario.html" target="iframe">Vestuário</a>
-                    </li>
-                    <li>
-                        <a href="politicadetroca.html" target="iframe">Política de Troca</a>
-                    </li>
-                    <li>
-                        <a href="contato.html" target="iframe">Contato</a>
-                    </li>
-                </div>
-                <div class="icon">
-                    <span>
-                        <ion-icon name="bag-outline"></ion-icon>
-                    </span>
-                </div>
+        <nav>
+            <a class="logo" href="/">Flor de Liz Moda</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="acessorios.html">Acessórios</a></li>
+                <li><a href="vestuario.html">Vestuário</a></li>
+                <li><a href="politicadetroca.html">Politica de Troca</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
             </header>
             <div class="Container-roupas">
                 <div class="roupa">
@@ -307,43 +297,78 @@
                     <p>Camisa</p>
                     <h5>R$100,00</h5>
                 </div>
-                <div class="roupa">
-                    <img src="../imag/camisa13.jpg" alt="">
-                    <p>Camiseta</p>
-                    <h5>R$110,00</h5>
-                </div>
             </div>
-            <section class="Contato" id="Contato">
-                <div class="meio-contato">
-                    <h3>Endereço:</h3>
-                    <div class="icons">
-                        <li>
-                            <a href="#">Rua da Felicidade, 1456 - Bairro: Coração</a>
-                        </li>
+            <footer>
+                <div class="container body-content">
+                </div>
+                <footer class="fixarRodape">
+                    <hr />
+    
+                    <div class="main-content">
+                        <div class="left box">
+                            <h2> Sobre nós</h2>
+                            <div class="content">
+                                <p> A Loja Flor de Liz Moda é mais que uma loja de roupas e acessórios femininos.
+                                    Temos por principal missão oferecer roupas incríveis e de qualidade a um preço
+                                    acessível,
+                                    deixando nossas clientes ainda mais lindas. A marca consegue vestir gerações e os mais
+                                    variados estilos, gerando uma experiência única de compra, sempre buscando tendências e
+                                    novidades no mercado da moda.</p>
+    
+                                <div class="social">
+                                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                                    <a href="#"><span class="fab fa-twitter"></span></a>
+                                    <a href="#"><span class="fab fa-instagram"></span></a>
+                                    <a href="#"><span class="fab fa-youtube"></span></a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="center box">
+                            <h2>Endereço</h2>
+                            <div class="content">
+                                <div class="place">
+                                    <a href="https://goo.gl/maps/Epn9isx87QBV98yy7"><span class="fas fa-map-marker"></span></a>
+                                    <span class="text">Rua da Felicidade, São Paulo</span>
+                                </div>
+    
+                                <div class="phone">
+                                    <span class="fas fas fa-phone-alt"></span>
+                                    <span class="text">+55 11 99999-9999</span>
+                                </div>
+    
+                                <div class="email">
+                                    <span class="fas fa-envelope"></span>
+                                    <span class="text">flordelizmoda@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right box">
+                            <h2>Contato</h2>
+                            <div class="content">
+                                <form action="#">
+                                    <div class="email">
+                                        <div class="text">Email *</div>
+                                        <input type="email" required>
+                                    </div>
+                                    <div class="msg">
+                                        <div class="text">Mensagem *</div>
+                                        <textarea rows="2" cols="25" required></textarea>
+                                    </div>
+                                    <div class="btn">
+                                        <button type="submit">Enviar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="meio-contato">
-                    <h3>Cadastro</h3>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                    <li>
-                        <a href="#">Cadastro</a>
-                    </li>
-                </div>
-                <div class="meio-contato">
-                    <h3>Contato</h3>
-                    <li>
-                        <a href="#">Telefone: 99999-9999</a>
-                    </li>
-                    <li>
-                        <a href="#">Email: flordelizmoda@gmail.com</a>
-                    </li>
-                </div>
-            </section>
-            <script src="https://unpkg.com/scrollreveal"></script>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="js/script.js"></script>
+    
+                    <div class="bottom">
+                        <div class="center">
+                            <span class="credit">Criado por alunos da Uninove<a href="#"></a></span>
+                            <span class="far fa-copyright">2022 Todos os diteitos reservados</span>
+                        </div>
+                    </div>
+                </footer>
         </body>
     </html>

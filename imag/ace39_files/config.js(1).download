@@ -1,0 +1,6 @@
+
+window[window["TiktokAnalyticsObject"]].instance("C3RDMB04C3S2QIOUV1PG").setAdvancedMatchingAvailableProperties({"email":true,"phone_number":true,"auto_email":true,"auto_phone_number":true});
+window[window["TiktokAnalyticsObject"]].instance("C3RDMB04C3S2QIOUV1PG").setPixelInfo && window[window["TiktokAnalyticsObject"]].instance("C3RDMB04C3S2QIOUV1PG").setPixelInfo({status: 0, name: "Pixel Vivara", advertiserID: "6985247893812707329", setupMode: 1, partner: "", is_onsite: false });
+window[window["TiktokAnalyticsObject"]].setPCMDomain && window[window["TiktokAnalyticsObject"]].setPCMDomain("vivara.com.br");
+window[window["TiktokAnalyticsObject"]].setPCMConfig && window[window["TiktokAnalyticsObject"]].setPCMConfig(null);
+window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie && window[window["TiktokAnalyticsObject"]].enableFirstPartyCookie(true);
