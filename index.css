@@ -7,8 +7,13 @@
   list-style: none;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+}
+
 a {
-  color: #fff;
+  color: black;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -23,13 +28,25 @@ a:hover {
   letter-spacing: 4px;
 }
 
+.icon span {
+  font-size: 2rem;
+  margin-top: -7px;
+  position: fixed;
+  cursor: pointer;
+}
+
+.icon span:hover {
+  color: #787bab;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-  background: #23232e;
+  background: white;
   height: 8vh;
+  font-weight: 700;
 }
 
 main {
@@ -56,7 +73,7 @@ main {
 .mobile-menu div {
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: #23232e;
   margin: 8px;
   transition: 0.3s;
 }
@@ -78,7 +95,7 @@ main {
     right: 0;
     width: 50vw;
     height: 92vh;
-    background: #23232e;
+    background: white;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -122,6 +139,17 @@ main {
   transform: rotate(45deg) translate(-5px, -7px);
 }
 
+.cards img {
+  width: 450px;
+  height: auto;
+  transition: 0.35s ease;
+}
+
+.cards img:hover {
+  transform: scale(0.9) translateY(-5px);
+  cursor: pointer;
+}
+
 .background {
   background-image: url(./imag/foto1.jpg);
   background-repeat: no-repeat;
@@ -132,39 +160,31 @@ main {
   height: 68vh;
 }
 
-
 .container {
   padding: 10rem 0 0 38rem;
   line-height: 25rem;
 }
 
 .container button {
-  background-color: #111;
+  margin-top: 5%;
+  background-color: #ffe2ee;
   padding: 1rem 3rem 1rem 3rem;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #111;
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .container button:hover {
-  background-color: 23232e;
+  background-color: #787bab;
   transform: scaleY(1.2);
 }
 
 section {
   padding: 1rem;
   text-align: center;
-}
-
-.Container-card-1 {
-  display: absolute;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding-top: 2rem;
 }
 
 .cards img {
@@ -178,22 +198,14 @@ section {
   cursor: pointer;
 }
 
-.container-3 {
-  height: 70vh;
-  width: 100%;
-  background: url(./imag/foto2.jpg);
+.container-1 {
+  background-image: url(./imag/foto2.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.container-2 {
-  font-size: 1rem;
-  padding: 2rem 0 0 37rem;
-  line-height: 1rem;
-  color: #111;
+  background-position: center top;
+  width: 100%;
+  max-width: 100%;
+  height: 68vh;
 }
 
 footer {
@@ -202,14 +214,14 @@ footer {
   width: 100%;
   font-size: 1.vw;
   height: 0px;
-  color: white;
+  color:black;
   background: #111;
   left: 1rem;
 }
 
 .main-content {
   display: flex;
-  background: #111;
+  background: white;
 }
 
 .main-content .box {
@@ -233,7 +245,7 @@ footer {
   content: '';
   width: 15%;
   height: 2px;
-  background: #ffe2ee;
+  background: black;
   top: -10px;
   left: 0px;
 }
@@ -243,7 +255,7 @@ footer {
   content: '';
   height: 2px;
   width: 100%;
-  background: white;
+  background: #cac0df;
   top: -10px;
   left: 0px;
 }
@@ -259,7 +271,7 @@ footer {
 .left .content .social a span {
   width: 40px;
   height: 40px;
-  background: #222222;
+  background: w;
   text-align: center;
   line-height: 40px;
   border-radius: 5px;
@@ -268,7 +280,7 @@ footer {
 }
 
 .left .content .social a span:hover {
-  background: #1a1a1a;
+  background: white;
 }
 
 .left .content p {
@@ -289,7 +301,7 @@ footer {
 }
 
 .center .content .fas:hover {
-  background: #23232e;
+  background: #cac0df;
 }
 
 .center .content .text {
@@ -312,7 +324,7 @@ footer {
   font-size: 17px;
   background: white;
   padding-left: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 .right form input {
@@ -321,13 +333,13 @@ footer {
 
 .right form input:focus,
 .right form textarea:focus {
-  outline-color: white;
+  outline-color: black;
 }
 
 .right form .text {
   font-size: 17px;
   margin-bottom: 2px;
-  color: white;
+  color: black;
 }
 
 .right form .btn {
@@ -337,7 +349,7 @@ footer {
 .right form .btn button {
   height: 40px;
   width: 100%;
-  background: white;
+  background: #cac0df;
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
@@ -345,22 +357,22 @@ footer {
 }
 
 .right form .btn button:hover {
-  background: #23232e;
+  background: #cac0df;
 }
 
 .bottom .center {
   padding: 1px;
   font-size: 15px;
-  background: #23232e;
+  background: #cac0df;
   text-align: center;
 }
 
 .bottom .center span {
-  color: 151515;
+  color: #151515;
 }
 
 .bottom .center a {
-  color: #23232e;
+  color: white;
   text-decoration: none;
 }
 
