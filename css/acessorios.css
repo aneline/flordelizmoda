@@ -137,9 +137,24 @@ main {
 
 }
 
+.container-1 img:hover {
+  transform: scale(0.9) translateY(-5px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .container-card-2 img {
   width: 250px;
   height: auto;
+}
+
+.container-1 button {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  color: #111;
+  font-weight: 700;
+  background: #fff;
 }
 
 .container-card-2 {
