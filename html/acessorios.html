@@ -1,640 +1,549 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Flor de Liz Moda</title>
-        <link rel="stylesheet" href="/css/acessorios.css">
-    </head>
-    <body>
-        <div class="background">
-            <header>
-                <nav>
-                    <a class="logo" href="/">Flor de Liz Moda</a>
-                    <div class="mobile-menu">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="../index.html">Início</a>
-                        </li>
-                        <li>
-                            <a href="./html/acessorios.html">Acessórios</a>
-                        </li>
-                        <li>
-                            <a href="./html/vestuario.html">Vestuário</a>
-                        </li>
-                        <li>
-                            <a href="./html/politicadetroca.html">Politica de Troca</a>
-                        </li>
-                        <li>
-                            <a href="#">Login</a>
-                        </li>
-                        <div class="icon">
-                            <span>
-                                <ion-icon name="bag-outline"></ion-icon>
-                            </span>
-                        </div>
-                    </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flor de Liz Moda</title>
+    <link rel="stylesheet" href="../css/acessorios.css">
+</head>
+
+<body>
+
+
+    <!-- <header>
+            <nav>
+                <a class="logo" href="/">Flor de Liz Moda</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="./html/acessorios.html">Acessórios</a>
+                    </li>
+                    <li>
+                        <a href="./html/vestuario.html">Vestuário</a>
+                    </li>
+                    <li>
+                        <a href="./html/politicadetroca.html">Politica de Troca</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
                     <div class="icon">
-                        <span class="cont-qtd">
-                            <a href="carrinho.html">
-                                <ion-icon name="bag-outline"></ion-icon>
-                            </a>
-                            <span id="valorTotalCompra">0,00</span>
+                        <span>
+                            <ion-icon name="bag-outline"></ion-icon>
                         </span>
                     </div>
-                </nav>
-            </header>
-            <div class="container-3"></div>
-            <div class="container-1">
-                <div class="container-card-2">
-                    <img src="../imag/ace36.webp" alt="">
-                    <p>Chapéu de Palha</p>
-                    <h5>
-                        R$ 50,00
-                 -
-                        <span id="quantidade1">0</span>
-                        <span style="display:none;" id="total1"></span>
-                    </h5>
-                    <tr class="center" id="produto1">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(1)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(1)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
+                </ul>
+                <div class="icon">
+                    <span class="cont-qtd">
+                        <a href="carrinho.html">
+                            <ion-icon name="bag-outline"></ion-icon>
+                        </a>
+                        <span id="valorTotalCompra">0,00</span>
+                    </span>
                 </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace37.webp" alt="">
-                    <p>Chapéu de palha Decorado</p>
-                    <h5>
-                        R$ 70,00
-                    -
-                        <span id="quantidade2">0</span>
-                        <span style="display:none;" id="total2"></span>
-                    </h5>
-                    <tr class="center" id="produto2">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(2)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(2)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace38.webp" alt="">
-                    <p>Chapéu de Viseira</p>
-                    <h5>
-                        R$ 36,00
-                    -
-                        <span id="quantidade3">0</span>
-                        <span style="display:none;" id="total3"></span>
-                    </h5>
-                    <tr class="center" id="produto3">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(3)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(3)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace28.webp" alt="">
-                    <p>Boné de beisebol Bordado</p>
-                    <h5>
-                        R$ 65,00
-                    -
-                        <span id="quantidade4">0</span>
-                        <span style="display:none;" id="total4"></span>
-                    </h5>
-                    <tr class="center" id="produto4">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(4)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(4)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace25.webp" alt="">
-                    <p>Porta-chaves de desenho Animado</p>
-                    <h5>
-                        R$ 20,00
-                    -
-                        <span id="quantidade5">0</span>
-                        <span style="display:none;" id="total5"></span>
-                    </h5>
-                    <tr class="center" id="produto5">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(5)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(5)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace22.webp" alt="">
-                    <p>Chaveiro de futebol e Letras</p>
-                    <h5>
-                        R$ 26,00
-                    -
-                        <span id="quantidade6">0</span>
-                        <span style="display:none;" id="total6"></span>
-                    </h5>
-                    <tr class="center" id="produto6">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(6)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(6)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace24.webp" alt="">
-                    <p>Chaveiro do Panda</p>
-                    <h5>
-                        R$ 28,00
-                    -
-                        <span id="quantidade7">0</span>
-                        <span style="display:none;" id="total7"></span>
-                    </h5>
-                    <tr class="center" id="produto7">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(7)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(7)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace23.webp" alt="">
-                    <p>Chaveiro de charme de cacto</p>
-                    <h5>
-                        R$ 30,00
-                    -
-                        <span id="quantidade8">0</span>
-                        <span style="display:none;" id="total8"></span>
-                    </h5>
-                    <tr class="center" id="produto8">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(8)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(8)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace18.webp" alt="">
-                    <p>2pcs Cinto de fivela de Metal</p>
-                    <h5>
-                        R$ 70,00
-                    -
-                        <span id="quantidade9">0</span>
-                        <span style="display:none;" id="total9"></span>
-                    </h5>
-                    <tr class="center" id="produto9">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(9)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(9)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace19.webp" alt="">
-                    <p>3pcs Cinto estreito de Couro</p>
-                    <h5>
-                        R$80,00
-                    -
-                        <span id="quantidade10">0</span>
-                        <span style="display:none;" id="total10"></span>
-                    </h5>
-                    <tr class="center" id="produto10">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(10)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(10)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace20.webp" alt="">
-                    <p>4pcs Cinto magro</p>
-                    <h5>
-                        R$100,00
-                    -
-                        <span id="quantidade11">0</span>
-                        <span style="display:none;" id="total11"></span>
-                    </h5>
-                    <tr class="center" id="produto11">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(11)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(11)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace21.webp" alt="">
-                    <p>3pcs de Cinto de fivela Quadrada</p>
-                    <h5>
-                        R$830,00
-                    -
-                        <span id="quantidade12">0</span>
-                        <span style="display:none;" id="total12"></span>
-                    </h5>
-                    <tr class="center" id="produto12">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(12)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(12)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace17.webp" alt="">
-                    <p>Óculos de sol Simples</p>
-                    <h5>
-                        R$ 550,00
-                    -
-                        <span id="quantidade13">0</span>
-                        <span style="display:none;" id="total13"></span>
-                    </h5>
-                    <tr class="center" id="produto13">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(13)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(13)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace13.webp" alt="">
-                    <p>Óculos de moda com Lente</p>
-                    <h5>
-                        R$650,00
-                    -
-                        <span id="quantidade14">0</span>
-                        <span style="display:none;" id="total14"></span>
-                    </h5>
-                    <tr class="center" id="produto14">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(14)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(14)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace15.webp" alt="">
-                    <p>Óculos da moda sem aro Lente</p>
-                    <h5>
-                        R$720,00
-                    -
-                        <span id="quantidade15">0</span>
-                        <span style="display:none;" id="total15"></span>
-                    </h5>
-                    <tr class="center" id="produto15">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(15)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(15)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace16.webp" alt="">
-                    <p>Óculos de moda com Decoração</p>
-                    <h5>
-                        R$830,00
-                    -
-                        <span id="quantidade16">0</span>
-                        <span style="display:none;" id="total16"></span>
-                    </h5>
-                    <tr class="center" id="produto16">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(16)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(16)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace7.webp" alt="">
-                    <p>Relógio de metal Redondo</p>
-                    <h5>
-                        R$ 690,00
-                    -
-                        <span id="quantidade17">0</span>
-                        <span style="display:none;" id="total17"></span>
-                    </h5>
-                    <tr class="center" id="produto17">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(17)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(17)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace8.webp" alt="">
-                    <p>Relógio Diamante</p>
-                    <h5>
-                        R$850,00
-                    -
-                        <span id="quantidade18">0</span>
-                        <span style="display:none;" id="total18"></span>
-                    </h5>
-                    <tr class="center" id="produto18">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(18)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(18)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace9.webp" alt="">
-                    <p>Relógio Retangular</p>
-                    <h5>
-                        R$960,00
-                    -
-                        <span id="quantidade19">0</span>
-                        <span style="display:none;" id="total19"></span>
-                    </h5>
-                    <tr class="center" id="produto19">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(19)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(19)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace11.webp" alt="">
-                    <p>Relógio</p>
-                    <h5>
-                        R$2.900,00
-                    -
-                        <span id="quantidade20">0</span>
-                        <span style="display:none;" id="total20"></span>
-                    </h5>
-                    <tr class="center" id="produto20">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(20)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(20)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace40.webp" alt="">
-                    <p>Conjunto de joia</p>
-                    <h5>
-                        R$ 480,00
-                    -
-                        <span id="quantidade21">0</span>
-                        <span style="display:none;" id="total21"></span>
-                    </h5>
-                    <tr class="center" id="produto21">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(21)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(21)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace41.webp" alt="">
-                    <p>Colar com Decoração de strass</p>
-                    <h5>
-                        R$ 550,00
-                    -
-                        <span id="quantidade22">0</span>
-                        <span style="display:none;" id="total22"></span>
-                    </h5>
-                    <tr class="center" id="produto22">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <td>
-                            <i onclick="adicionarItem(22)">
-                                <button>Adicionar</button>
-                            </i>
-                        </td>
-                        <!-- REMOVER DO CARRINHO -->
-                        <td>
-                            <i onclick="removerItem(22)">
-                                <button>Remover</button>
-                            </i>
-                        </td>
-                    </tr>
-                </div>
-                <div class="container-card-2">
-                    <img src="../imag/ace42.webp" alt="">
-                    <p>Colar com decoração de Pérolas</p>
-                    <h5>
-                        R$ 690,00
-                    -
-                        <span id="quantidade23">0</span>
-                        <span style="display:none;" id="total23"></span>
-                    </h5>
-                    <tr class="center" id="produto23">
-                        <!-- ADICIONAR AO CARRINHO -->
-                        <i onclick="adicionarItem(23)">
-                            <button>Adicionar</button>
-                        </i>
-                    </td>
-                    <!-- REMOVER DO CARRINHO -->
-                    <td>
-                        <i onclick="removerItem(23)">
-                            <button>Remover</button>
-                        </i>
-                    </td>
-                </tr>
-            </div>
-            <div class="container-card-2">
-                <img src="../imag/ace43.webp" alt="">
-                <p>Colar com decoração de Pedras</p>
-                <h5>
-                    R$ 650,00
-                    -
-                    <span id="quantidade24">0</span>
-                    <span style="display:none;" id="total24"></span>
-                </h5>
-                <tr class="center" id="produto24">
-                    <!-- ADICIONAR AO CARRINHO -->
-                    <td>
-                        <i onclick="adicionarItem(24)">
-                            <button>Adicionar</button>
-                        </i>
-                    </td>
-                    <!-- REMOVER DO CARRINHO -->
-                    <td>
-                        <i onclick="removerItem(24)">
-                            <button>Remover</button>
-                        </i>
-                    </td>
-                </tr>
-            </div>
+            </nav>
+        </header> -->
+
+
+    <div class="container-3"></div>
+    <div class="container-1">
+        <div class="container-card-2">
+            <img src="../imag/ace36.webp" alt="">
+            <p>Chapéu de Palha</p>
+            <h5>
+                R$ 50,00
+                -
+                <span id="quantidade1">0</span>
+                <span style="display:none;" id="total1"></span>
+            </h5>
+            <tr class="center" id="produto1">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(1)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(1)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
         </div>
+        <div class="container-card-2">
+            <img src="../imag/ace37.webp" alt="">
+            <p>Chapéu de palha Decorado</p>
+            <h5>
+                R$ 70,00
+                -
+                <span id="quantidade2">0</span>
+                <span style="display:none;" id="total2"></span>
+            </h5>
+            <tr class="center" id="produto2">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(2)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(2)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace38.webp" alt="">
+            <p>Chapéu de Viseira</p>
+            <h5>
+                R$ 36,00
+                -
+                <span id="quantidade3">0</span>
+                <span style="display:none;" id="total3"></span>
+            </h5>
+            <tr class="center" id="produto3">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(3)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(3)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace28.webp" alt="">
+            <p>Boné de beisebol Bordado</p>
+            <h5>
+                R$ 65,00
+                -
+                <span id="quantidade4">0</span>
+                <span style="display:none;" id="total4"></span>
+            </h5>
+            <tr class="center" id="produto4">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(4)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(4)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace25.webp" alt="">
+            <p>Porta-chaves de desenho Animado</p>
+            <h5>
+                R$ 20,00
+                -
+                <span id="quantidade5">0</span>
+                <span style="display:none;" id="total5"></span>
+            </h5>
+            <tr class="center" id="produto5">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(5)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(5)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace22.webp" alt="">
+            <p>Chaveiro de futebol e Letras</p>
+            <h5>
+                R$ 26,00
+                -
+                <span id="quantidade6">0</span>
+                <span style="display:none;" id="total6"></span>
+            </h5>
+            <tr class="center" id="produto6">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(6)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(6)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace24.webp" alt="">
+            <p>Chaveiro do Panda</p>
+            <h5>
+                R$ 28,00
+                -
+                <span id="quantidade7">0</span>
+                <span style="display:none;" id="total7"></span>
+            </h5>
+            <tr class="center" id="produto7">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(7)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(7)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace23.webp" alt="">
+            <p>Chaveiro de charme de cacto</p>
+            <h5>
+                R$ 30,00
+                -
+                <span id="quantidade8">0</span>
+                <span style="display:none;" id="total8"></span>
+            </h5>
+            <tr class="center" id="produto8">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(8)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(8)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace18.webp" alt="">
+            <p>2pcs Cinto de fivela de Metal</p>
+            <h5>
+                R$ 70,00
+                -
+                <span id="quantidade9">0</span>
+                <span style="display:none;" id="total9"></span>
+            </h5>
+            <tr class="center" id="produto9">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(9)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(9)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace19.webp" alt="">
+            <p>3pcs Cinto estreito de Couro</p>
+            <h5>
+                R$80,00
+                -
+                <span id="quantidade10">0</span>
+                <span style="display:none;" id="total10"></span>
+            </h5>
+            <tr class="center" id="produto10">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(10)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(10)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace20.webp" alt="">
+            <p>4pcs Cinto magro</p>
+            <h5>
+                R$100,00
+                -
+                <span id="quantidade11">0</span>
+                <span style="display:none;" id="total11"></span>
+            </h5>
+            <tr class="center" id="produto11">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(11)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(11)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace21.webp" alt="">
+            <p>3pcs de Cinto de fivela Quadrada</p>
+            <h5>
+                R$830,00
+                -
+                <span id="quantidade12">0</span>
+                <span style="display:none;" id="total12"></span>
+            </h5>
+            <tr class="center" id="produto12">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(12)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(12)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace17.webp" alt="">
+            <p>Óculos de sol Simples</p>
+            <h5>
+                R$ 550,00
+                -
+                <span id="quantidade13">0</span>
+                <span style="display:none;" id="total13"></span>
+            </h5>
+            <tr class="center" id="produto13">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(13)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(13)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace13.webp" alt="">
+            <p>Óculos de moda com Lente</p>
+            <h5>
+                R$650,00
+                -
+                <span id="quantidade14">0</span>
+                <span style="display:none;" id="total14"></span>
+            </h5>
+            <tr class="center" id="produto14">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(14)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(14)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace15.webp" alt="">
+            <p>Óculos da moda sem aro Lente</p>
+            <h5>
+                R$720,00
+                -
+                <span id="quantidade15">0</span>
+                <span style="display:none;" id="total15"></span>
+            </h5>
+            <tr class="center" id="produto15">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(15)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(15)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace16.webp" alt="">
+            <p>Óculos de moda com Decoração</p>
+            <h5>
+                R$830,00
+                -
+                <span id="quantidade16">0</span>
+                <span style="display:none;" id="total16"></span>
+            </h5>
+            <tr class="center" id="produto16">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(16)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(16)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace7.webp" alt="">
+            <p>Relógio de metal Redondo</p>
+            <h5>
+                R$ 690,00
+                -
+                <span id="quantidade17">0</span>
+                <span style="display:none;" id="total17"></span>
+            </h5>
+            <tr class="center" id="produto17">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(17)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(17)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace8.webp" alt="">
+            <p>Relógio Diamante</p>
+            <h5>
+                R$850,00
+                -
+                <span id="quantidade18">0</span>
+                <span style="display:none;" id="total18"></span>
+            </h5>
+            <tr class="center" id="produto18">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(18)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(18)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace9.webp" alt="">
+            <p>Relógio Retangular</p>
+            <h5>
+                R$960,00
+                -
+                <span id="quantidade19">0</span>
+                <span style="display:none;" id="total19"></span>
+            </h5>
+            <tr class="center" id="produto19">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(19)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(19)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+        <div class="container-card-2">
+            <img src="../imag/ace11.webp" alt="">
+            <p>Relógio</p>
+            <h5>
+                R$2.900,00
+                -
+                <span id="quantidade20">0</span>
+                <span style="display:none;" id="total20"></span>
+            </h5>
+            <tr class="center" id="produto20">
+                <!-- ADICIONAR AO CARRINHO -->
+                <td>
+                    <i onclick="adicionarItem(20)">
+                        <button>Adicionar</button>
+                    </i>
+                </td>
+                <!-- REMOVER DO CARRINHO -->
+                <td>
+                    <i onclick="removerItem(20)">
+                        <button>Remover</button>
+                    </i>
+                </td>
+            </tr>
+        </div>
+
+
+    </div>
     </section>
-    <iframe
-        src="rodape.html"
-        scrolling="no"
-        frameborder="no"
-        width="100%"
-        height="340px"
-    ></iframe>
+
+    <iframe src="rodape.html" scrolling="no" frameborder="no" width="100%" height="340px"></iframe>
+
     <script src="../js/carrinhoAcessorios.js"></script>
 </body>
+
 </html>
