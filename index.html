@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flor de Liz Moda</title>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <link rel="stylesheet" href=".\css\index.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flor de Liz Moda</title>
+<link rel="shortcut icon" href="moça.ico" type="image/x-icon">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<link rel="stylesheet" href="index.css" />
+<link rel="stylesheet" href=".\css\index.css" />
 </head>
 
 <body>
 
+<div class="background">
     <header>
         <nav>
             <a class="logo" href="/">Flor de Liz Moda</a>
@@ -20,13 +17,11 @@
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-
             <ul class="nav-list">
-
-                <li><a href="./html/home.html" target="iframe">Início</a></li>
-                <li><a href="./html/acessorios.html" target="iframe">Acessórios</a></li>
-                <li><a href="./html/vestuario.html" target="iframe">Vestuário</a></li>
-                <li><a href="./html/politicadetroca.html" target="iframe">Politica de Troca</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./html/acessorios.html">Acessórios</a></li>
+                <li><a href="./html/vestuario.html">Vestuário</a></li>
+                <li><a href="./html/politicadetroca.html">Politica de Troca</a></li>
                 <li><a href="#">Login</a></li>
                 <li>
                     <div class="icon">
@@ -35,14 +30,71 @@
                         </span>
                     </div>
                 </li>
+<header>
+    <nav>
+        <a class="logo" href="/">Flor de Liz Moda</a>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+
+            <li><a href="./html/home.html" target="iframe">Início</a></li>
+            <li><a href="./html/acessorios.html" target="iframe">Acessórios</a></li>
+            <li><a href="./html/vestuario.html" target="iframe">Vestuário</a></li>
+            <li><a href="./html/politicadetroca.html" target="iframe">Politica de Troca</a></li>
+            <li><a href="#">Login</a></li>
+            <li>
+                <div class="icon">
+                    <span>
+                        <ion-icon name="bag-outline"></ion-icon>
+                    </span>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+</header>
+
+<iframe id="iframeId" name="iframe" src="./html/home.html" frameborder="0" scrolling="yes" seamless="seamless"
+    style="display:block; width:100%; height:100vh;"></iframe>
 
             </ul>
         </nav>
     </header>
 
-    <iframe id="iframeId" name="iframe" src="./html/home.html" frameborder="0" scrolling="yes" seamless="seamless"
-        style="display:block; width:100%; height:100vh;"></iframe>
+    <div class="container">
+        <a href="html/novascolecoes.html">
+            <button>Novas coleção</button>
+        </a>
+    </div>
+</div>
 
+<section>
+    <br>
+    <h2>Novas Categorias</h2>
+    <br>
+    <div class="cards">
+        <a href="html/vestuario.html"><img src="imag/calça7.jpg"></a>
+        <a href="html/vestuario.html"><img src="imag/vestido4.jpg"></a>
+        <a href="html/novascolecoes.html"><img src="imag/conjuntosaia1.jpg"></a>
+        <a href="html/novascolecoes.html"><img src="imag/macacão5.jpg"></a>
+        <a href="html/novascolecoes.html"><img src="imag/saia10.jpg"></a>
+        <a href="html/vestuario.html"></a>
+    </div>
+</section>
+
+<section>
+    <h2>Promoção do Verão</h2>
+    <div class="container-1">
+    </div>
+</section>
+
+<iframe src="./html/rodape.html" scrolling="no" frameborder="no" width="100%" height="340px"></iframe>
+
+<script src="./js/index.js"></script>
 </body>
 
 <script src="./js/index.js"></script>
